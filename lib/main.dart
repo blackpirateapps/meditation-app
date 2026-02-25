@@ -56,8 +56,8 @@ class MainTabScaffold extends StatelessWidget {
               builder: (context) => const StatsScreen(),
             );
           default:
-            return const CupertinoTabView(
-              builder: (context) => HomeScreen(),
+            return CupertinoTabView(
+              builder: (context) => const HomeScreen(),
             );
         }
       },
