@@ -29,7 +29,7 @@ jobs:
       - name: Initialize Platforms (if needed)
         run: |
           if [ ! -d "android" ]; then
-            flutter create . --platforms=android,ios
+            flutter create --project-name meditation_app . --platforms=android,ios
           fi
 
       - name: Get dependencies
