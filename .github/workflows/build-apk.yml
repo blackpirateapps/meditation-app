@@ -30,6 +30,7 @@ jobs:
         run: |
           if [ ! -d "android" ]; then
             flutter create --project-name meditation_app . --platforms=android,ios
+            rm -rf test/
           fi
 
       - name: Get dependencies
